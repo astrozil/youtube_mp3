@@ -12,18 +12,18 @@ app.get('/getMp3', async (req, res) => {
 
     try {
        
-        // const mp3Url = await ytdl(videoUrl, {
-        //     extractAudio: true,
-        //     audioFormat: 'mp3',
-        //     getUrl: true,  
-        //     noCheckCertificates: true,
-        //     noWarnings: true,
-        //     preferFreeFormats: true,
-        //     addHeader: [
-        //       'referer:youtube.com',
-        //       'user-agent:googlebot'
-        //     ]
-        // });
+        const mp3Url = await ytdl(videoUrl, {
+            extractAudio: true,
+            audioFormat: 'mp3',
+            getUrl: true,  
+            noCheckCertificates: true,
+            noWarnings: true,
+            preferFreeFormats: true,
+            addHeader: [
+              'referer:youtube.com',
+              'user-agent:googlebot'
+            ]
+        });
 
         res.json({
             mp3Url: "Hello"
