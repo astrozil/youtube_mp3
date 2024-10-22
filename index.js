@@ -26,7 +26,7 @@ app.get('/getMp3', async (req, res) => {
         });
 
         res.json({
-            url : mp3Url 
+            url : mp3Url.trim()
         });
 
     } catch (error) {
