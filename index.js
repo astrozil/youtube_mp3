@@ -2,7 +2,6 @@ import express from "express";
 import ytdl from "youtube-dl-exec"; 
 const app = express();
 const PORT = 3000;
-const ytDlpPath = 'node_modules/youtube-dl-exec/bin/yt-dlp.exe';
 app.get('/getMp3', async (req, res) => {
     const videoUrl = req.query.url;
 
