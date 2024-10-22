@@ -13,7 +13,7 @@ app.get('/getMp3', async (req, res) => {
     try {
        
         const mp3Url = await ytdl(videoUrl, {
-          bin: ytDlpPath,
+         
             extractAudio: true,
             audioFormat: 'mp3',
             getUrl: true,  
